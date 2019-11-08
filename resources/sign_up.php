@@ -1,5 +1,5 @@
 
-<?php include('../app/login.php');?>
+<?php include('../app/sign_up.php');?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,15 +9,19 @@
 </head>
 <body>
 <div class="d-flex justify-content-center">
-	<h1>IMMOBILIARY LOGIN</h1>
+	<h1>IMMOBILIARY SIGN UP</h1>
 </div>
 <div class="d-flex justify-content-center">
 	<form method="POST" action="<?= $_SERVER[PHP_SELF];?>">
 		<input type="text" name="user" placeholder="User">
 		<input type="password" name="password" placeholder="Password">
+		<select name="rol">
+            <option selected value="0"> -- Choose a rol -- </option>
+            <option value="1">Comprador</option> 
+           	<option value="2">Vendedor</option> 
+        </select><br>
 		<input type="submit" name="submit" value="Entra">
 	</form>
 </div>
-<a href="sign_up.php">No tienes cuenta? Regístrate</a>
 </body>
 </html>
