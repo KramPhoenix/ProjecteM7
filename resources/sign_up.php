@@ -16,12 +16,14 @@
 		<input type="text" name="user" placeholder="User">
 		<input type="password" name="password" placeholder="Password">
 		<select name="rol">
-            <option selected value="0"> -- Choose a rol -- </option>
+            <option selected value="0"> -- Selecciona un rol -- </option>
             <option value="1">Comprador</option> 
            	<option value="2">Vendedor</option> 
         </select><br>
-		<input type="submit" name="submit" value="Entra">
+		<input type="submit" name="submit" value="REGISTRA">
 	</form>
-</div>
+	</div>
+	<div class="d-block mt-3"><?php if($state==true){?><h3>El nombre de usuario ya existe. Prueba con otro nombre.</h3><?php }?></div>
+
 </body>
 </html>
